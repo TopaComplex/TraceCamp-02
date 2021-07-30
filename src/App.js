@@ -18,15 +18,27 @@ function App() {
       <div className='navElement'>Technical Support</div>
     </div>
       <SayHello />
-      <MakePanel text='About Me' 
-        imageA= {queenie} 
-        imageB= {books}
-        imageC= {anime}
+      <MakePanel panelText='About Me' 
+        cardPicA= {queenie} 
+        cardTextA='Drawing'
+        cardInfoA='I try to draw every once in a while, though I still need to go a long way. This is my roomates dog, Queenie'
+        cardPicB= {books}
+        cardTextB='Reading'
+        cardInfoB='Reading allows us to explore a whole different world! One of my favorite book series is The Stormlight Archives by Brandon Sanderson'
+        cardPicC= {anime}
+        cardTextC='Anime'
+        cardInfoC='Putting this down fills me with disgust, but I had to find something for a third interest.'
         />
-      <MakePanel text='Technical Support'
-        imageA= {sam}
-        imageB= {winter}
-        imageC= {patches}
+      <MakePanel panelText='Technical Support'
+        cardPicA= {sam}
+        cardInfoA='Current Base of Operations is Seattle!'
+        cardTextA='Sam McDade'
+        cardPicB= {winter}
+        cardInfoB='Current Base of Operations is Myrtle Beach'
+        cardTextB='Winter Widdifield'
+        cardPicC= {patches}
+        cardInfoC= 'Patches is sort of dead, so hopefully his Base of Operations is Doggy Heaven'
+        cardTextC= 'Patches McDade'
         />
   </div>
 }

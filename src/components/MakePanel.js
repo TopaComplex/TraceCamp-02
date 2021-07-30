@@ -1,17 +1,24 @@
 import MakeCard from './MakeCard.js';
-import {useState, useStates} from 'react';
 
 function MakePanel(parts){
     return <div>
-        <h3 className='panelText'>{parts.text}</h3>
+        <h3 className='panelText'>{parts.panelText}</h3>
         <div className='panel'>
-            <img src={parts.imageA} alt="" className='panelPic' />
-            <img src={parts.imageB} alt="" className='panelPic' />
-            <img src={parts.imageC} alt="" className='panelPic' />
+                <MakeCard cardText={parts.cardTextA}
+                        cardPic={parts.cardPicA}
+                        cardInfo={parts.cardInfoA}
+                        />
+                <MakeCard cardText={parts.cardTextB}
+                        cardPic={parts.cardPicB}
+                        cardInfo={parts.cardInfoB}
+                        />
+                <MakeCard cardText={parts.cardTextC}
+                        cardPic={parts.cardPicC}
+                        cardInfo={parts.cardInfoC}
+                        />
         </div>
     </div>
 }
 
-{const [modalIsOpen, setModalState] = useState(false);}
 
 export default MakePanel;
